@@ -1,0 +1,323 @@
+{
+	"info": {
+		"_postman_id": "853f78c6-4480-465f-baeb-b5a717968495",
+		"name": "Henna Unch Kas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ANGGOTA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/anggota",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"anggota"
+					]
+				},
+				"description": "Menampilkan Semua Anggota"
+			},
+			"response": []
+		},
+		{
+			"name": "TAMBAH ANGGOTA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nama\" : \"Henna Unch\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/anggota",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"anggota"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TAMBAH IURAN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama\" : \"Henna Unch\",\r\n    \"id_anggota\" : \"1\",\r\n    \"jumlah\" : \"5000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/anggota",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"anggota"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TAMBAH LAPORAN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama\" : \"Henna Unch\",\r\n    \"id_anggota\" : \"1\",\r\n    \"jumlah\" : \"5000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/anggota",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"anggota"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UBAH DATA ANGGOTA",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"id\" : \"1\" , \r\n    \"nama\" : \"Henna Pea\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/anggota",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"anggota"
+					]
+				},
+				"description": "Ubah Data Anggota"
+			},
+			"response": []
+		},
+		{
+			"name": "UBAH IURAN",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"id\" : 1, \r\n    \"tanggal\" : \"2020-12-16 19:16:48\",\r\n    \"id_anggota\" : 2,\r\n    \"jumlah\" : 10000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/iuran",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"iuran"
+					]
+				},
+				"description": "Ubah Data Anggota"
+			},
+			"response": []
+		},
+		{
+			"name": "UBAH LAPORAN",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 1,\r\n    \"tipe\" : \"Keluar\",\r\n    \"tanggal\" : \"2020-12-16 19:16:48\",\r\n    \"jumlah\" : \"100000\",\r\n    \"keterangan\" : \"Beli Masker 1 bag\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/laporan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"laporan"
+					]
+				},
+				"description": "Ubah Data Anggota"
+			},
+			"response": []
+		},
+		{
+			"name": "HAPUS ANGGOTA",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/anggota",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"anggota"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HAPUS IURAN",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/iuran",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"iuran"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HAPUS LAPORAN",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/laporan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"laporan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET IURAN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/iuran",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"iuran"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET LAPORAN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/laporan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"laporan"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
