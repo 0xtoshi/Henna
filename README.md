@@ -10,6 +10,6 @@ opo download zip
 
 neg folder app 
 
-`` npm install
+npm install
 
 database disesuaikne
