@@ -1,8 +1,9 @@
 var express = require('express');
 var router = express.Router();
-//panggil Model mahasiswa
+
 var Anggota = require('../models/AnggotaUnch.js');
-/* TAMPIL DATA */
+
+
 router.get('/', function (req, res, next) {
     Anggota.findAll().then(data => {
         res.json({

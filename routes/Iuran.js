@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
-//panggil Model mahasiswa
+
 var Iuran = require('../models/IuranUnch.js');
-/* TAMPIL DATA */
+
 router.get('/', function (req, res, next) {
     Iuran.findAll().then(data => {
         res.json({

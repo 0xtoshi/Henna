@@ -1,7 +1,7 @@
 var koneksi = require('../koneksi'); // Inisialisasi Koneksi di file sebelah hyungg
 const Sequelize = require('sequelize'); // Load Library Sequelze
 
-const Anggota = koneksi.define('anggota', //nama model mahasiswa maka tabelnya: mahasiswas
+const Anggota = koneksi.define('anggota', 
     {
         nama: {
             type: Sequelize.STRING,
